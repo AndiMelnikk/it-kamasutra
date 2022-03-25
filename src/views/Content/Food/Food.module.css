@@ -1,0 +1,17 @@
+.listUl{
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.listUl li{
+    height: 300px;
+    list-style: none;
+}
+.listUl li img{
+    width: 100%;
+}
+.listUl li h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,7 @@
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    min-height: 100%;
+    max-height: 100%;
+}

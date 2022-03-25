@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+/* -- СТИЛІ БЛОКІВ НОВИН -- */
+
+.containerNews {
+    width: 100%;
+    overflow: scroll;
+    height: 100vh;
+    padding: 30px;
+}
+
+.blockNews {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+    height: 100vh;
+}
+
+
+.blockNews_1 {
+    grid-template-areas:
+            "b_P b_P b_P    b_P b_P b_P       b_P b_P b_P    lan lan lan"
+            "b_P b_P b_P    b_P b_P b_P       b_P b_P b_P    lan lan lan"
+            "u_P u_P u_P    sear sear sear    sear sear s_P  s_P s_P s_P"
+            "u_P u_P u_P    peo peo peo       peo peo peo    seat seat seat";
+}
+
+.blockNews_2 {
+    grid-template-areas:
+            "b_P b_P b_P    b_P b_P b_P       lan lan lan    lan lan lan"
+            "u_P u_P u_P    u_P sear sear     sear sear s_P   s_P s_P s_P"
+            "peo peo peo    peo peo seat       seat seat seat    seat seat seat";
+}
+
+
+.blockNews > div {
+    border-radius: 20px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* -- All styles blockNews  -- */
+
+.blockNews > div > .content {
+    display: grid;
+    gap: 10px;
+}
+
+.blockNews > div > .content > div {
+    overflow: scroll;
+}
+
+.blockImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blockImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blockText {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.blockText h2, .blockText p {
+    padding: 0;
+    margin: 0;
+}
+
+.blockText h2 {
+    font-size: 120%;
+    font-family: "Open Sans", "Helvetica Neue";
+}
+
+.blockText p {
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
+
+/* --- bigPost --- */
+
+.bigPost {
+    grid-area: b_P;
+    background-color: rgb(52, 68, 72);
+}
+
+.blockNews_2 .bigPost > div, .blockNews_1 .bigPost > div {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* --- verticalPost --- */
+
+.verticalPost {
+    grid-area: lan;
+    background-color: rgb(33, 60, 67);
+}
+
+.blockNews_1 .verticalPost .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+.blockNews_2 .verticalPost .content {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* --- verticalPost_2 --- */
+
+.verticalPost_2 {
+    grid-area: u_P;
+    background-color: rgb(50, 84, 93);
+}
+
+.blockNews_2 .verticalPost_2 .content, .blockNews_1 .verticalPost_2 .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* --- horizonPost --- */
+
+.horizonPost {
+    grid-area: sear;
+    background-color: rgb(50, 93, 104);
+}
+
+.blockNews_1 .horizonPost .content {
+    grid-template-columns: 1fr 2fr;
+}
+
+.blockNews_2 .horizonPost .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* --- smallHorizonPost --- */
+
+.smallHorizonPost {
+    grid-area: s_P;
+    background-color: rgb(31, 53, 58);
+}
+
+.blockNews_1 .smallHorizonPost .content {
+    grid-template-columns: 1fr 1fr;
+}
+
+.blockNews_2 .smallHorizonPost .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+/* --- bigHorizonPost --- */
+
+.bigHorizonPost {
+    grid-area: peo;
+    background-color: rgb(55, 85, 93);
+}
+
+.blockNews_1 .bigHorizonPost .content {
+    grid-template-columns: 2fr 1fr;
+}
+
+.blockNews_2 .bigHorizonPost .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* --- miniHorizonPost --- */
+
+.miniHorizonPost {
+    grid-area: seat;
+    background-color: rgb(52, 90, 99);
+}
+
+.blockNews_1 .miniHorizonPost .content {
+    grid-template-rows: 1fr 1fr;
+}
+
+.blockNews_2 .miniHorizonPost .content {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* -- ІНШІ СТИЛІ -- */
+.loadNewsBlock {
+    z-index: 3;
+    position: fixed;
+    top: 93%;
+    height:40px;
+    width: 70%;
+    text-align: center;
+}

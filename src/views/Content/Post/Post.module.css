@@ -1,0 +1,14 @@
+.news{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    height: 100vh;
+}
+.posts__block {
+    height: 90vh;
+}
+.posts__block ul{
+    height: 100%;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}

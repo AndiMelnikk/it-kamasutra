@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('../../../assets/font/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+}
+
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.chat__block{
+    background-color: rgb(70, 70, 70);
+}
+
+.user__block{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    background-color: rgb(27, 27, 27);
+    padding: 10px 10px;
+}
+.header__user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header__user h2{
+    text-align: center;
+}
+.header__user h2 span {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 5px 40px;
+    border-radius: 10px;
+}
+.dialogs_block_chat{
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(70, 70, 70);
+    overflow: hidden;
+}
+
+
+.search__block{
+    display: block;
+    height: 40px;
+    width: calc(90% - 20px);
+    margin: 5px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search__block input{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    display: block;
+    font-weight: 900;
+}
+.search__block > div{
+    background-color: silver;
+    border-radius: 30px;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.dialogs_block_chat ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: scroll;
+    height: calc(100% - 40px);
+}

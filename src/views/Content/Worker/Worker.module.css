@@ -1,0 +1,26 @@
+.container {
+    margin: 10px 40px;
+    width: calc(100% - 80px);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.container ul,
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.workersCarts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50px;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .workersCarts {
+        grid-template-columns: 1fr;
+    }
+}

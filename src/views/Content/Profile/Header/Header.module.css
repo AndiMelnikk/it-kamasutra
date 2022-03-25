@@ -1,0 +1,76 @@
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.header{
+    /* background-image: url('../../../../assets/img/images/fon-profile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+.header img{
+    width: 100%;
+    height: 150px;
+}
+ .profileDescription{
+    padding: 0 10px;
+}
+.profileDescriptionBlock {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.avatar .img{
+    width: 130px;
+    height: 130px;
+    background-image: url('../../../../assets/img/images/avatar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.description{
+    font-family: sans-serif;
+}
+.description ul{
+    font-weight: 100;
+} 
+.description ul li{
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0;
+    overflow: hidden;
+    margin: 2px 5px;
+    height: 30px;
+    background-color:  sienna;
+}
+.description ul li span{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    display: inline-block;
+}
+
+.description ul li .nameSkill{
+    background-color: white;
+    color: black;
+}
+.description ul li .descSkill{
+    background-color: red;
+}
